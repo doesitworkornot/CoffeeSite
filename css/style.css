@@ -1,3 +1,4 @@
+
 /***MainStuff***/
 body{
   margin: auto;
@@ -71,6 +72,7 @@ body{
   z-index: -1;
 }
 
+
 /***Bottom Part of First Part***/
 .BottomText {
   margin: auto;
@@ -96,7 +98,9 @@ body{
   top: calc(100vh / 2 - 60px);
   width: 100%;
   height: calc(100vh / 6);
+
 }
+
 
 /***HugeBlock and everything inside of it***/
 .HugeBlock{
@@ -104,9 +108,15 @@ body{
   top: calc(100vh / 4 + 150px);
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 60vh 60vh 60vh;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
 }
+
+.HugeBlock > div{
+  box-sizing: border-box;
+}
+
 
 .Pic3 {
   box-sizing: border-box;
@@ -158,4 +168,3 @@ body{
   text-align: right;
   font-weight: lighter;
   position: relative;
-}
