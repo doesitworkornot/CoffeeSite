@@ -1,176 +1,112 @@
-/*
-HTML5 Doctor Reset v1.6.1
-http://html5doctor.com/html-5-reset-stylesheet/
-*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-body {
-    line-height:1;
-}
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-nav ul {
-    list-style:none;
-}
-blockquote, q {
-    quotes:none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-del {
-    text-decoration: line-through;
-}
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-input, select {
-    vertical-align:middle;
-}
 
-
-
-
-
+/***MainStuff***/
+body{
+  margin: auto;
+}
 /***Head***/
-header {
-  border-width: 7px 0 7px 0;
-  border-color: rgb(155, 142, 191);
-  border-style: solid;
-  background-color: white;
-  width: 100%;
+.Header {
   box-sizing: border-box;
+  border-width: 7px;
+  border-color: rgb(155, 142, 191);
+  border-bottom-style: solid;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 39.27px 11.73px rgba(0, 0, 0, 0.73);
+  width: 100%;
+  height: 76px;
 }
 
 .Footer {
   background-color: rgb(56, 56, 56);
-  border-radius: 3px 3px 0 0;
-  font-family: "Candara";
+  position: relative;
+  top: 380px;
+  height: 50px;
+  width: 100%;
+  font-family: "Calibri";
   text-align: center;
-  padding: 4em;
-  margin-top: 3em;
   color: white;
 }
 
 
 /***Logo Stuff***/
-.CoffeeLogoText {
-  font-size: 60px;
-  font-family: "KursivC";
-  color: rgb(56, 56, 56);
-  line-height: 1.2;
-  text-align: center;
-  display: inline-block;
-}
-
-header > div > img {
-  height: 50px;
-  margin: 0 auto;
-}
-
-header > div{
+.CoffeeLogo {
   margin: auto;
-  width: 10%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/CoffeeLogo.png); /* Поменяй тут*/
+  position: relative;
 }
 
 /***First Part of Site***/
 .welcome {
-  font-size: 52px;
-  display: block;
-  width: 35%;
-  margin-left: 10%;
-  padding: 1.1em;
-  border: 7px solid rgb(155, 142, 191);
-  border-radius: 100px 10px 100px 100px;
+  margin:auto;
+  font-size: 50px;
   font-family: "Candara";
-  color: rgb(31, 31, 31);
   font-weight: lighter;
+  color: rgb(31, 31, 31);
   text-align: center;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.73);
 }
 
 .BOx {
-  padding-top: 3em;
-  box-sizing: border-box;
+  display: block;
+  width: 640px;
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-width: 7px;
+  border-color: rgb(155, 142, 191);
+  border-style: solid;
+  border-radius: 100px 10px 100px 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 12px 0px #5E5E5E;
+  position: relative;
+  left: calc(100vw / 6);
+  top: calc(100vh / 4);
+}
+
+.Pic1 {
+  position: absolute;
+  top:0;
   width: 100%;
-  height: 75vh;
-  background-image: url(../img/mainpic.jpg);
+  z-index: -1;
 }
 
 
 /***Bottom Part of First Part***/
 .BottomText {
+  margin: auto;
   font-size: 52px;
   font-family: "Candara";
   color: rgb(31, 31, 31);
   text-align: center;
-  margin-bottom: 2em;
+  font-weight: lighter;
+  position: relative;
 }
 
-.BottomText > h3{
-  font-weight: lighter;
+.Bottom {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  border-width: 7px;
+  border-color: rgb(155, 142, 191);
+  border-top-style: solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 39.27px 11.73px rgba(0, 0, 0, 0.73);
+  position: relative;
+  top: calc(100vh / 2 - 60px);
+  width: 100%;
+  height: calc(100vh / 6);
+
 }
 
 
 /***HugeBlock and everything inside of it***/
 .HugeBlock{
+  position: relative;
+  top: calc(100vh / 4 + 150px);
+  background-color: white;
   display: grid;
   grid-template-rows: 60vh 60vh 60vh;
   grid-template-columns: 1fr 1fr;
@@ -181,31 +117,54 @@ header > div{
   box-sizing: border-box;
 }
 
-.subtext{
+
+.Pic3 {
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  width: 85%;
+  border-width: 7px;
+  border-color: rgb(155, 142, 191);
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px 0px #5E5E5E;
+}
+
+.Pic2 {
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  width: 85%;
+  border-width: 7px;
+  border-color: rgb(155, 142, 191);
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px 0px #5E5E5E;
+}
+
+.Citati {
+  padding: 40px;
+  margin: auto;
+  font-size: 40px;
   font-family: "Candara";
   color: rgb(31, 31, 31);
-  font-size: 3em;
-  padding: 10vw;
+  text-align: center;
+  font-weight: lighter;
+  text-align: center;
 }
 
-.subtext > h3{
-  margin-top: 1.5em;
-  font-weight: lighter;
+.Name {
+  padding: 40px;
+  margin: auto;
+  font-size: 70px;
+  font-family: "Candara";
+  color: rgb(31, 31, 31);
   text-align: right;
-}
-
-.subtext > p{
   font-weight: lighter;
-  text-align: left;
-}
-
-.img{
-  padding: 2em;
-}
-
-.img > img{
-  width: 85%;
-  border: 7px solid rgb(155, 142, 191);
-  border-radius: 10px;
-  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.73);
-}
+  position: relative;
