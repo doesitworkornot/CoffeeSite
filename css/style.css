@@ -98,6 +98,9 @@ header {
   box-sizing: border-box;
 }
 
+@import url(../fonts/4208.ttf);
+@import url(../fonts/Candara.ttf);
+
 .Footer {
   background-color: rgb(56, 56, 56);
   border-radius: 3px 3px 0 0;
@@ -121,17 +124,18 @@ header {
 
 header > div > img {
   height: 50px;
-  margin: 0 auto;
 }
 
 header > div{
   margin: auto;
-  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /***First Part of Site***/
 .welcome {
-  font-size: 52px;
+  font-size: calc(0.5em + 3vw);
   display: block;
   width: 35%;
   margin-left: 10%;
@@ -152,12 +156,14 @@ header > div{
   width: 100%;
   height: 75vh;
   background-image: url(../img/mainpic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 
 /***Bottom Part of First Part***/
 .BottomText {
-  font-size: 52px;
+  font-size: calc(0.5em + 3vw);
   font-family: "Candara";
   color: rgb(31, 31, 31);
   text-align: center;
