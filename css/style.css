@@ -87,13 +87,13 @@ input, select {
 
 @font-face {
   font-family: "Candara";
-  src: url(../fonts/Candara.ttf);
-  font-weight: lighter;
+  src: url("../fonts/Candara.ttf");
+  font-weight: 300;
 }
 
 @font-face {
   font-family: "KursivC";
-  src: url(../fonts/4208.ttf);
+  src: url("../fonts/4208.ttf");
 }
 
 
