@@ -88,6 +88,7 @@ input, select {
 @font-face {
   font-family: "Candara";
   src: url(../fonts/Candara.ttf);
+  font-weight: lighter;
 }
 
 @font-face {
