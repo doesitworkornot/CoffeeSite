@@ -85,7 +85,15 @@ input, select {
 }
 
 
+@font-face {
+  font-family: "Candara";
+  src: url(../fonts/Candara.ttf);
+}
 
+@font-face {
+  font-family: "KursivC";
+  src: url(../fonts/4208.ttf);
+}
 
 
 /***Head***/
@@ -98,8 +106,6 @@ header {
   box-sizing: border-box;
 }
 
-@import url(../fonts/4208.ttf);
-@import url(../fonts/Candara.ttf);
 
 .Footer {
   background-color: rgb(56, 56, 56);
